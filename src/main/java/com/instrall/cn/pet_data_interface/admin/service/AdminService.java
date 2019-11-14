@@ -34,9 +34,14 @@ public class AdminService {
         return adminMapper.login(name,pwd);
     }
 
-    public int insertLog(String userid,String time){
+    public int insertLog(int userid,String time){
         return adminMapper.insertLog(userid,time);
     }
+
+    public int loginCode(String name){
+        return adminMapper.loginCode(name);
+    }
+
 
 
 }
